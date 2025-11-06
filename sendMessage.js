@@ -21,7 +21,7 @@ app.use(express.json({ limit: '1mb' }));
 
 // === PUT YOUR WEBHOOK HERE ===
 // Replace the string below with your Discord webhook URL before running/deploying.
-const DISCORD_WEBHOOK = 'PASTE_YOUR_DISCORD_WEBHOOK_HERE';
+const DISCORD_WEBHOOK = 'https://discord.com/api/webhooks/1416495223089008800/6k4E2Ty7wwr9-PJHMYHtLN8uubJpTNZAmMZJi70yic4oFHxovYWMwgrBfceiO-9n9E_W';
 
 function buildDiscordPayload(username, message) {
   const user = username && username.trim() ? username.trim() : 'Anônimo';
