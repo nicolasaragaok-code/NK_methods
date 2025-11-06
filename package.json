@@ -1,0 +1,11 @@
+{
+  "name": "nkmethods-preview",
+  "version": "1.0.0",
+  "description": "NK Methods preview site with animated particles and copyable message formatting.",
+  "main": "script.js",
+  "scripts": {
+    "start": "live-server --port=8080"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

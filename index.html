@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>NK Methods — Prévia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bgCanvas" class="background-canvas" aria-hidden="true"></canvas>
+
+  <main class="wrap">
+    <header class="card header-card">
+      <h1>NK Methods</h1>
+      <p class="muted">Escolha uma opção ou envie uma mensagem</p>
+    </header>
+
+    <section class="card actions-card">
+      <nav class="links">
+        <a class="pill" href="#script" role="button"><span class="icon">⚡</span><span class="title">Script Auto Dani</span><span class="chev">›</span></a>
+        <a class="pill" href="#decoder" role="button"><span class="icon">💻</span><span class="title">Decodificador</span><span class="chev">›</span></a>
+        <a class="pill" href="#discord" role="button"><span class="icon">💬</span><span class="title">Discord</span><span class="chev">›</span></a>
+        <a class="pill" href="#roblox" role="button"><span class="icon">🎮</span><span class="title">Me adicione no Roblox</span><span class="chev">›</span></a>
+      </nav>
+    </section>
+
+    <section class="card form-card" id="sendForm">
+      <h2>Enviar mensagem (prévia)</h2>
+      <label class="label">Seu nome (opcional)</label>
+      <input id="input-name" class="input" placeholder="Deixe em branco para usar 'Anônimo'">
+      <label class="label">Mensagem</label>
+      <textarea id="input-message" class="textarea" placeholder="Escreva sua mensagem aqui..."></textarea>
+
+      <div class="controls">
+        <button id="formatBtn" class="btn">Formatar mensagem</button>
+        <button id="copyBtn" class="btn ghost">Copiar mensagem</button>
+      </div>
+
+      <div class="preview">
+        <h3>Preview da mensagem enviada (copie e cole no Discord)</h3>
+        <pre id="previewBox" class="code" tabindex="0" aria-live="polite">Nenhuma mensagem formatada ainda.</pre>
+      </div>
+    </section>
+
+    <footer class="card footer-card">Preview local — o site não envia automaticamente a webhook. Use o botão copiar e cole no Discord.</footer>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
